@@ -23,5 +23,5 @@ app.get('/', async (req, res) => {
 })
 
 app.use('/articles', articleRouter)
-
-app.listen(9000)
+let port=process.env.PORT || 9000;
+app.listen(port)
